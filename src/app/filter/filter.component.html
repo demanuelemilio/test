@@ -1,0 +1,36 @@
+<div class="filter-container">
+
+  <h1>Filtro de Imágenes</h1>
+  <form [formGroup]="options" (ngSubmit)="sendForm()">
+
+
+    <mat-form-field appearance="fill" >
+      <mat-label>Texto de la imagen</mat-label>
+      <input matInput formControlName="texto">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+
+      <mat-select  formControlName="identificador">
+        <mat-option>-- None --</mat-option>
+        <mat-option *ngFor="let element of array" [value]="element.id">{{element.id}}</mat-option>
+      </mat-select>
+      <mat-label><i> id de la imagen</i></mat-label>
+      
+    </mat-form-field>
+
+    <button mat-button color="primary"  type="submit">Send</button>
+
+  </form>
+
+  <ng-container *ngIf="arrayFind">
+
+    <div> Resultado de la búsqueda : </div>
+
+    <app-img-detail [imagen]=arrayElement></app-img-detail>
+
+  </ng-container>
+
+
+
+</div>

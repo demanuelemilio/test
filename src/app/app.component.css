@@ -1,0 +1,25 @@
+img{
+    min-width: 100%;
+}
+.example-viewport{
+    height: 550px;
+    /* width: 600px; */
+    margin: 2rem;
+    border: 1px solid saddlebrown;
+    display: flex;
+   }
+   .list{
+    /* height: 50px; */
+    justify-content: center;
+    align-items: center;
+   }
+
+
+
+.example-card {
+    /* width: 100% */
+  }
+  
+.example-header-image {
+    background-size: cover;
+  }

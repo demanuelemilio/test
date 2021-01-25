@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+
+    <mat-card-header>
+    </mat-card-header>
+
+    <img mat-card-image [src]="imagen?.photo" alt="imagen?.text"
+        onerror="this.src='https://via.placeholder.com/500'">
+
+    <mat-card-content>
+        <p>
+            {{imagen?.text}}
+        </p>    
+
+    </mat-card-content>
+    
+</mat-card>

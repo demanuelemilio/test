@@ -1,0 +1,10 @@
+<h1 style="text-align:center"> Lista de imágenes</h1>
+
+<cdk-virtual-scroll-viewport itemSize="500" minBufferPx="5" maxBufferPx="4000" class="example-viewport">
+
+    <div *cdkVirtualFor="let item of array" class="">
+
+        <app-img-detail [imagen]=item></app-img-detail>
+
+    </div>
+</cdk-virtual-scroll-viewport>

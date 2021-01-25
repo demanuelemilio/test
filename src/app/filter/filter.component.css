@@ -1,0 +1,40 @@
+
+.filter-container{
+  margin:2rem;
+}
+.filter-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.filter-container .mat-form-field {
+  width: 220px;
+}
+
+.filter-container form {
+  margin-bottom: 20px;
+}
+
+.filter-container form > * {
+  margin: 5px 0;
+}
+
+.filter-container .mat-radio-button {
+  margin: 0 12px;
+}
+img::before {
+  content: 'fall back';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 200px;
+  background-color: #fd0;
+  color: currentColor;
+  text-align: center;
+  border-radius: 2px;
+  display: block;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+} 
